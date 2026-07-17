@@ -1,0 +1,22 @@
+body{
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #00fd19;
+    font: bold 90px Times New Roman, Times New Roman, sans-serif;
+    text-align: center;
+}
+.navbar{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4208f1;
+    background-color:  #00fd19;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.navbar align-self: hover;
