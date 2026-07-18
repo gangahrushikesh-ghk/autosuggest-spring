@@ -47,11 +47,8 @@ function toggleUser(){
     userGender.innerHTML = users[id].gender;
 
 }
+
 function randomUser(){
-    random user API  function to be written in index.js: 
-
-
-function randomuser(){
     fetch('https://randomuser.me/api/')
         .then(function(response){
             // convert raw text to json
@@ -79,5 +76,4 @@ function randomuser(){
         .catch(function(err){
             console.log(err);
         })
-}
 }
