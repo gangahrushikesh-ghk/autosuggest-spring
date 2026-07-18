@@ -1,22 +1,94 @@
-body{
+body {
     background-color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-h1{
+
+h1 {
     color: #00fd19;
-    font: bold 90px Times New Roman, Times New Roman, sans-serif;
+    font: bold 60px "Times New Roman", Times, serif;
     text-align: center;
 }
-.navbar{
+
+.navbar {
     border-style: solid;
     border-width: 2px;
     border-color: #4208f1;
-    background-color:  #00fd19;
+    background-color: #00fd19;
     color: white;
     padding: 10px;
     text-align: center;
-
+    transition: all 0.3s ease;
 }
-.navbar align-self: hover;
+
+/* Hover: make navbar background black and text white */
+.navbar:hover {
+    background-color: #000000;
+    color: #efefef;
+    box-shadow: 0 4px 12px rgba(253, 38, 0, 0.982);
+}
+
+/* If there are links inside navbar, make their hover background black too */
+.navbar a:hover {
+    background-color: #000000;
+    color: #00fd19;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(253, 38, 0, 0.982);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Card styling with rounded edges */
+.card {
+    background-color: #00fd19;
+    color: #000000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(225, 4, 4, 0.2);
+    transition: all 0.3s ease;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(253, 38, 0, 0.5);
+}
+
+/* Card image styling */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.1s ease;
+}
+
+.card img:hover {
+    transform: scale(1.08);
+}
+
+/* Toggle button styling */
+button {
+    background-color: #00fd19;
+    color: #000000;
+    border: 2px solid #4208f1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #00fd19;
+    box-shadow: 0 4px 12px rgba(253, 38, 0, 0.982);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
