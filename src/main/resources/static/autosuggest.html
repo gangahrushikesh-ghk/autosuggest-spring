@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AutoSuggest</title>
+        <style>
+            .gear {
+                position: absolute;
+                top: 50px;
+                left: 20px;
+                font-size: 40px;
+                cursor: pointer;
+            }
+            .info-time {
+                border: 2px solid #ccc;
+                border-radius: 40px;
+                padding: 10px 20px;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                font-size: 40px;
+                color: #888;
+            }
+            .header {
+                text-align: center;
+                font-size: 60px;
+                margin-top: 100px;
+            }
+            .para {
+                text-align: center;
+                font-size: 30px;
+                margin-top: 10px;
+                color: #555;
+            }
+            .mag-glass {
+                position:sticky;
+                top: 350px;
+                left: 310px;
+                font-size: 24px;
+                color: #888;
+                
+            }
+            .input {
+                position: sticky;
+                width: 100%;
+                max-width: 293px;
+                padding: 10px 40px;
+                font-size: 20px;
+                border: 2px solid #ccc;
+                border-radius: 40px;
+                top: 305px;
+                left: 350px;
+            }
+            .being {
+                color: rgb(157, 0, 219);
+            }
+            .infinity {
+                color: black;
+            }
+            .search-suggestions {
+            poisition: absolute;        
+            width: 60%;
+            margin: 8px 0 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            text-align: left;
+            margin: 0px auto;
+            margin-top: 150px;
+        }
+        .suggestion {
+            padding: 10px 14px;
+            border-bottom: 1 px solid #f2f2f2;
+            font-size: 14px;
+        }
+        </style>
+    </head>
+    <body>
+        <span class="gear"> &#x2699;</span>
+        <span class="info-time">&#x2022; online | &#x1F552; -ms</span>
+        <h1 class="header"><span class="being">Being</span><span class="infinity">Infinity</span></h1>
+        <p class="para">One million phrases. Four algorithms. Prefix Based Auto Suggest.</p>
+        <span class="mag-glass">&#128269;</span>
+        <input class="input" type="text" id="input" placeholder="Start typing to search phrases">
+        <div class="search-suggestions">
+        <div class="suggestion"> Cyber security </div>
+        <div class="suggestion"> Artificial Intelligence and Data Science </div>
+        </div>
+    </body>
+</html>
